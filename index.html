@@ -22,6 +22,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom Sheet -->
     <link href="style.css" rel="stylesheet">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28080172-9"></script>
+    <script src="js/analytics.js"></script>
 </head>
 
 <body>
@@ -124,21 +128,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 
-    <script>
-        // https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
-        $('a[href^="#"]').on('click', function (event) {
-
-            var target = $(this.getAttribute('href'));
-
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-            }
-
-        });
-    </script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 
 </html>
