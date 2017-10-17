@@ -1,23 +1,144 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Denis Zholob">
+    <meta name="description" content="Denis ZHolob (DDDGamer) Github">
+    <meta name="keywords" content="Denis, Zholob, DDDGamer, Projects, Software, Code">
 
-  <h1 class="page-heading">Posts</h1>
+    <!-- Title/Favicon -->
+    <title>DZ Software</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        rel="stylesheet" crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Sheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<body>
+    <!-- <nav class="navbar sticky-top navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#gh-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <section class="parallax">
+        <div class="pattern">
+            <div class="darken">
+                <div class="intro-titles">
+                    <h1>DENIS ZHOLOB</h1>
+                    <hr>
+                    <p>Hey there, I am primarily a front-end software engineer, but I dabble in other areas as well.
+                        <br>Here is a list of my top projects on Github.</p>
+                </div>
+                <div class="intro-action text-center lead">
+                    <a href="#gh-projects" class="text-center d-block">See Projects
+                        <br>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <section id="gh-projects" class="projects">
+        <div id="factorio-cheat-sheet" class="project prj-factorio-cheat-sheet">
+            <div class="pattern">
+                <div class="darken">
+                    <div class="content">
+                        <h2 class="project-title">Factorio Cheat Cheet</h2>
+                        <p class="project-details">Compendium of common facts and tips in the game
+                            <a href="https://www.factorio.com/">Factorio</a>
+                        </p>
+                        <a href="https://dddgamer.github.io/factorio-cheat-sheet/" class="project-link box-link">View Project</a>
+                        <a href="https://github.com/DDDGamer/factorio-cheat-sheet" class="project-link box-link">Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="factorio-cheat-sheet" class="project prj-factorio-softmod">
+            <div class="pattern">
+                <div class="darken">
+                    <div class="content">
+                        <h2 class="project-title">Factorio Softmod Collection</h2>
+                        <p class="project-details">Custom
+                            <a href="https://www.factorio.com/">Factorio</a>
+                            soft/server side mod that includes QoL features, like playerlist, readme, tasks, and more. (WIP)
+                        </p>
+                        <a href="https://github.com/DDDGamer/factorio-dz-softmod" class="project-link box-link">Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="factorio-cheat-sheet" class="project prj-visualizer">
+            <div class="pattern">
+                <div class="darken">
+                    <div class="content">
+                        <h2 class="project-title">Blender Audio Visualizer</h2>
+                        <p class="project-details">Add-On to generate audio visualzer mesh in
+                            <a href="https://www.blender.org/">Blender</a>
+                        </p>
+                        <a href="http://deniszholob.com/software/visualizer-addon/" class="project-link box-link">View Project</a>
+                        <a href="https://github.com/DDDGamer/blender-audio-visualizer-addon" class="project-link box-link">Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section id="contact">
+        <h3>Contact/Social</h>
+        <div class="container">
+            <div class="list-group">
+                <a href="http://deniszholob.com/factorio/" class="list-group-item list-group-item-action">Official Website</a>
+                <a href="https://discord.gg/hmwb3dB" class="list-group-item list-group-item-action">Discord</a>
+                <a href="https://www.patreon.com/deniszholob" class="list-group-item list-group-item-action">Patreon</a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
+        $('a[href^="#"]').on('click', function (event) {
+
+            var target = $(this.getAttribute('href'));
+
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+
+        });
+    </script>
+</body>
+
+</html>
